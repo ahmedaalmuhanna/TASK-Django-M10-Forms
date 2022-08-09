@@ -21,10 +21,7 @@ def create_store_item(request):
         if form.is_valid():
             form.save()
             return redirect("store-item-list") 
-            
-            
-            
     context = { 'form' : form }
-    return render(request, 'create_store_item.html', context )
+    return render(request, 'create_store_tem.html', context )
     
     
