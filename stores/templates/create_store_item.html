@@ -9,7 +9,8 @@
     
 
     <form action="{% url 'create-store-item' %}" method="POST">
-        {% csrf_token %} {{ form }}
+        {% csrf_token %} 
+        {{ form }}
 
     <input type="submit" value="submit" />
     </form> 
