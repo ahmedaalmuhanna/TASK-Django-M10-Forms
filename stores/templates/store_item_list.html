@@ -20,7 +20,7 @@
         <p>Kind: {{ item.kind }}</p>
         <p>Created At: {{ item.created_at }}</p>
         <p>Modified At: {{ item.modified_at }}</p>
-        <a href="{% url 'delete-store-item' item_id=item.id %}">Click</a>
+        <a href="{% url 'delete-store-item' item_id=item.id %}">Click To Delete</a>
         {% endfor %}
       </section>
       {% else %}

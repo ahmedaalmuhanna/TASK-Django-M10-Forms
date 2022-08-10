@@ -48,7 +48,7 @@ def delete_store_item (request, item_id):
     except:
         Http404
     store_item.delete()
-    redirect("store-item-list")
+    return redirect("store-item-list" )
 
     
     
